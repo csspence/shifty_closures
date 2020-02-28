@@ -4,11 +4,13 @@ Functional closures can get overly attached. Set them straight!
 Why doesn't greet_abe() actually greet Abe?
 */
 
-var name = 'Abe';
-var greet_abe = function() {
+
+const greet_abe = () => {
+  let name = 'Abe';
   return "Hello, " + name + '!';
 };
-name = 'Ben';
-var greet_ben = function() {
+
+const greet_ben = () => {
+  let name = 'Ben';
   return "Hello, " + name + '!';
 };
